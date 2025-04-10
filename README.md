@@ -1,34 +1,56 @@
-# Next.js Assessment App
+# Next.js Posts App
 
-This is a small Next.js application built as part of a frontend assessment. It demonstrates data fetching with both SSG and SSR, reusable components, client-side filtering, styling with CSS Modules, and unit testing using Jest and React Testing Library.
-
----
-
-## Features
-
-- **Home Page** (`/`)
-  - Static generation (`getStaticProps`)
-  - Displays a list of posts from [JSONPlaceholder](https://jsonplaceholder.typicode.com/posts)
-  - Client-side search to filter posts dynamically
-  - Styled with CSS Modules
-
-- **Post Detail Page** (`/posts/[id]`)
-  - Server-side rendering (`getServerSideProps`)
-  - Displays full post details based on post ID
-
-- **Reusable `PostCard` Component**
-  - Clean UI card for individual post previews
-
-- **Unit Testing**
-  - Jest & React Testing Library configured
-  - Includes test for `PostCard` component
+A small post viewer app built with **Next.js (Pages Router)** that demonstrates key frontend skills including server-side rendering, static site generation, search filtering, reusable components, CSS Modules styling, and basic testing.
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Features
 
-### 1. Clone the Repository
+- ✅ **Static Generation (SSG)**: Home page fetches posts at build time
+- ✅ **Server-side Rendering (SSR)**: Individual post details are fetched per request
+- ✅ **Client-side Search**: Filter posts dynamically by title
+- ✅ **Reusable Card Component**: Clean, modular UI design
+- ✅ **CSS Modules**: Scoped component styles
+- ✅ **Testing**: Includes unit tests for PostCard and search filter
 
-```bash
-git clone https://github.com/your-username/nextjs-assessment.git
-cd nextjs-assessment
+---
+
+## 🔧 Setup Instructions
+
+1. **Clone the repo**
+
+3. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+4. **Run the development server**
+
+   ```bash
+   npm run dev
+   ```
+
+5. **Run tests**
+
+   ```bash
+   npm test
+   ```
+
+---
+
+## 🧠 Approach
+
+- Used `getStaticProps` on the home page for optimal performance.
+- Implemented `getServerSideProps` on post detail page to show up-to-date data.
+- PostCard component is built to be reusable and styled with CSS Modules.
+- Search filter is fully client-side using `useState`.
+
+---
+
+## 🧪 Tech Stack
+
+- Next.js (Pages Router)
+- React
+- CSS Modules
+- Jest + React Testing Library
